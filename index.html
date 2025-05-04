@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ProBook - Online Bookstore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 class="logo">📚 ProBook</h1>
+    <div class="theme-toggle">
+      <label for="themeSelect">Theme:</label>
+      <select id="themeSelect">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Explore Knowledge One Page at a Time</h2>
+      <p>Thousands of titles across all genres – discover your next favorite book today.</p>
+      <button class="hero-btn" onclick="scrollToBooks()">Browse Books</button>
+    </div>
+  </section>
+
+  <main>
+    <section class="book-list" id="books">
+      <h2>Featured Books</h2>
+
+      <div class="book" onclick="animateBook(this)">
+        <img src="https://via.placeholder.com/150" alt="Book 1" />
+        <h3>The Art of Coding</h3>
+        <p>Master clean, efficient code for real-world applications.</p>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+
+      <div class="book" onclick="animateBook(this)">
+        <img src="https://via.placeholder.com/150" alt="Book 2" />
+        <h3>Design Patterns</h3>
+        <p>Learn timeless design principles every developer must know.</p>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+
+      <div class="book" onclick="animateBook(this)">
+        <img src="https://via.placeholder.com/150" alt="Book 3" />
+        <h3>JavaScript Deep Dive</h3>
+        <p>Understand the inner workings of JavaScript in depth.</p>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h2>Join Our Newsletter</h2>
+      <p>Get updates on new books, offers, and more.</p>
+      <form id="newsletterForm">
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="confirmationMsg"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ProBook. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
